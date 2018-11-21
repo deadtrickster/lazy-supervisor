@@ -1,4 +1,4 @@
-@copyright 2017 Ilya Khaprov <<i.khaprov@gmail.com>>.
+@copyright 2018 Ilya Khaprov <<i.khaprov@gmail.com>>.
 @title lazy_supervisor
 @version 0.0.1
 
@@ -8,6 +8,15 @@
 [![Hex.pm Downloads][Hex downloads badge]][Hex link]
 [![Build Status][Travis badge]][Travis link]
 [![Coverage Status][Coveralls badge]][Coveralls link]
+
+## Lazy supervisor
+
+Just like standard OTP but lazy(so lazy it's a copy-pasta):
+ - stops children started by `start_children` after a timeout;
+ - also stops child started by `start_children` if the calling process stops.
+
+Example - one-off connection in a separate process and you don't want to wait forever, plus after you
+stopped waiting this connection is useless anyway.
 
 ## Contributing
 
