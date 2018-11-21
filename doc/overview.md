@@ -14,7 +14,7 @@
 Just like standard OTP but lazy(so lazy it's a copy-pasta):
  - stops children started by `start_children` after a timeout;
  - also stops child started by `start_children` if the calling process stops.
-
+   
 Example - one-off connection in a separate process and you don't want to wait forever, plus after you
 stopped waiting this connection is useless anyway.
 
@@ -39,7 +39,7 @@ The pre-commit check can be skipped by passing `--no-verify' to `git commit'.
 
 ## License
 
-MIT
+Apache2
 
 <!-- Named Links -->
 
